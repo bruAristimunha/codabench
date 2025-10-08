@@ -675,7 +675,7 @@ class Run:
 
         # GPU or not
         if os.environ.get("USE_GPU") and CONTAINER_ENGINE_EXECUTABLE=='docker':
-            engine_cmd.extend(['--gpus', 'all'])
+            engine_cmd.extend(['--gpus', '0'])
         # For podman specifically
         if os.environ.get("USE_GPU") and CONTAINER_ENGINE_EXECUTABLE=='podman':
             engine_cmd.extend(['--device', 'nvidia.com/gpu=all'])
