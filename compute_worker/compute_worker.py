@@ -652,6 +652,8 @@ class Run:
             'run',
             # Remove it after run
             '--rm',
+            # Disable network access inside the container
+            '--network', 'none',
             f'--name={self.ingestion_container_name if kind == "ingestion" else self.program_container_name}',
 
             # Don't allow subprocesses to raise privileges
