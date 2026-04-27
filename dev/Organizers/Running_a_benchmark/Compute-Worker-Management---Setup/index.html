@@ -4,10 +4,10 @@
 <link href="../Queue-Management/" rel="prev">
 <link href="../Compute-worker-installation-with-Podman/" rel="next">
 <link href="../../../assets/images/favicon.png" rel="icon">
-<meta content="mkdocs-1.6.1, mkdocs-material-9.6.21" name="generator">
-<title>Compute Worker Management &amp; Setup - Codabench Wiki</title>
-<link href="../../../assets/stylesheets/main.2a3383ac.min.css" rel="stylesheet">
-<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet">
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator">
+<title>Compute Worker Management &amp; Setup - Codabench Docs</title>
+<link href="../../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet">
+<link href="../../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet">
 
 <link href="../../../assets/external/fonts.googleapis.com/css.49ea35f2.css" rel="stylesheet">
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
@@ -39,7 +39,7 @@
 </div>
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="Codabench Wiki" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Codabench Wiki">
+<a aria-label="Codabench Docs" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Codabench Docs">
 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
@@ -49,7 +49,7 @@
 <div class="md-header__ellipsis">
 <div class="md-header__topic">
 <span class="md-ellipsis">
-            Codabench Wiki
+            Codabench Docs
           </span>
 </div>
 <div class="md-header__topic" data-md-component="header-topic">
@@ -108,14 +108,14 @@
 <div class="md-header__source">
 <a class="md-source" data-md-component="source" href="https://github.com/codalab/codabench" title="Go to repository">
 <div class="md-source__icon md-icon">
-<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
 </div>
 <div class="md-source__repository">
     GitHub
   </div>
 </a>
 </div>
-<a class="md-header-nav__button md-icon" href="../../../codabench-wiki.pdf" title="PDF">
+<a class="md-header-nav__button md-icon" href="../../../codabench-docs.pdf" title="PDF">
 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
 <path d="M128,0c-17.6,0-32,14.4-32,32v448c0,17.6,14.4,32,32,32h320c17.6,0,32-14.4,32-32V128L352,0H128z" fill="#E2E5E7"></path>
 <path d="m384 128h96l-128-128v96c0 17.6 14.4 32 32 32z" fill="#B0B7BD"></path>
@@ -232,15 +232,15 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="Codabench Wiki" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Codabench Wiki">
+<a aria-label="Codabench Docs" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Codabench Docs">
 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 </a>
-    Codabench Wiki
+    Codabench Docs
   </label>
 <div class="md-nav__source">
 <a class="md-source" data-md-component="source" href="https://github.com/codalab/codabench" title="Go to repository">
 <div class="md-source__icon md-icon">
-<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
 </div>
 <div class="md-source__repository">
     GitHub
@@ -251,7 +251,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../..">
 <span class="md-ellipsis">
+    
+  
     Home
+  
+
     
   </span>
 </a>
@@ -260,7 +264,11 @@
 <input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2" type="checkbox">
 <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
 <span class="md-ellipsis">
+    
+  
     Participants
+  
+
     
   </span>
 <span class="md-nav__icon md-icon"></span>
@@ -268,13 +276,21 @@
 <nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_2">
 <span class="md-nav__icon md-icon"></span>
-            Participants
+            
+  
+    Participants
+  
+
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Participants/User_Participating-in-a-Competition/">
 <span class="md-ellipsis">
+    
+  
     Participating in a Competition
+  
+
     
   </span>
 </a>
@@ -282,7 +298,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="https://www.codabench.org/competitions/public/?page=1">
 <span class="md-ellipsis">
+    
+  
     List of Current Benchmarks and Competitions
+  
+
     
   </span>
 </a>
@@ -294,7 +314,11 @@
 <input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox">
 <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
 <span class="md-ellipsis">
+    
+  
     Organizers
+  
+
     
   </span>
 <span class="md-nav__icon md-icon"></span>
@@ -302,14 +326,22 @@
 <nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-            Organizers
+            
+  
+    Organizers
+  
+
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3_1" type="checkbox">
 <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
 <span class="md-ellipsis">
+    
+  
     Benchmark Creation
+  
+
     
   </span>
 <span class="md-nav__icon md-icon"></span>
@@ -317,13 +349,21 @@
 <nav aria-expanded="false" aria-labelledby="__nav_3_1_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_3_1">
 <span class="md-nav__icon md-icon"></span>
-            Benchmark Creation
+            
+  
+    Benchmark Creation
+  
+
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../Benchmark_Creation/Getting-started-with-Codabench/">
 <span class="md-ellipsis">
+    
+  
     Getting Started Tutorial
+  
+
     
   </span>
 </a>
@@ -331,7 +371,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../Benchmark_Creation/Advanced-Tutorial/">
 <span class="md-ellipsis">
+    
+  
     Advanced Tutorial
+  
+
     
   </span>
 </a>
@@ -339,7 +383,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../Benchmark_Creation/How-to-transition-from-CodaLab-to-Codabench/">
 <span class="md-ellipsis">
+    
+  
     How to Transition from Codalab to Codabench?
+  
+
     
   </span>
 </a>
@@ -347,23 +395,35 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../Benchmark_Creation/Competition-Creation/">
 <span class="md-ellipsis">
+    
+  
     Competition Creation
+  
+
     
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Benchmark_Creation/Competition-Creation%3A-Form/">
+<a class="md-nav__link" href="../../Benchmark_Creation/Competition-Creation-Form/">
 <span class="md-ellipsis">
+    
+  
     Competition Creation Form
+  
+
     
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Benchmark_Creation/Competition-Creation%3A-Bundle/">
+<a class="md-nav__link" href="../../Benchmark_Creation/Competition-Creation-Bundle/">
 <span class="md-ellipsis">
+    
+  
     Competition Creation Bundle
+  
+
     
   </span>
 </a>
@@ -371,7 +431,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../Benchmark_Creation/Competition-Bundle-Structure/">
 <span class="md-ellipsis">
-    Competition YAML Structure
+    
+  
+    Competition Bundle Structure
+  
+
     
   </span>
 </a>
@@ -379,7 +443,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../Benchmark_Creation/Yaml-Structure/">
 <span class="md-ellipsis">
+    
+  
     YAML Structure
+  
+
     
   </span>
 </a>
@@ -387,7 +455,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../Benchmark_Creation/Competition-docker-image/">
 <span class="md-ellipsis">
+    
+  
     Competition Docker Image
+  
+
     
   </span>
 </a>
@@ -395,7 +467,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../Benchmark_Creation/Dataset-competition-creation-and-participate-instruction/">
 <span class="md-ellipsis">
+    
+  
     Dataset Competition Creation and participate instruction
+  
+
     
   </span>
 </a>
@@ -403,23 +479,23 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../Benchmark_Creation/Leaderboard-Functionality/">
 <span class="md-ellipsis">
+    
+  
     Leaderboard Features
+  
+
     
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="https://github.com/codalab/competition-examples/tree/master/codabench">
+<a class="md-nav__link" href="../../Benchmark_Creation/Benchmark-Examples/">
 <span class="md-ellipsis">
+    
+  
     Competition Examples
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../Benchmark_Creation/Cancer-Benchmarks/">
-<span class="md-ellipsis">
-    Example Cancer Benchmarks
+  
+
     
   </span>
 </a>
@@ -427,7 +503,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../Benchmark_Creation/Public-Tasks-and-Tasks-Sharing/">
 <span class="md-ellipsis">
+    
+  
     Public Tasks and Tasks Sharing
+  
+
     
   </span>
 </a>
@@ -435,7 +515,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../Benchmark_Creation/Detailed-Results-and-Visualizations/">
 <span class="md-ellipsis">
+    
+  
     Detailed Results and Visualization
+  
+
     
   </span>
 </a>
@@ -447,7 +531,11 @@
 <input checked="" class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox">
 <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
 <span class="md-ellipsis">
+    
+  
     Running a Benchmarks
+  
+
     
   </span>
 <span class="md-nav__icon md-icon"></span>
@@ -455,13 +543,21 @@
 <nav aria-expanded="true" aria-labelledby="__nav_3_2_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_3_2">
 <span class="md-nav__icon md-icon"></span>
-            Running a Benchmarks
+            
+  
+    Running a Benchmarks
+  
+
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../Competition-Management-%26-List/">
 <span class="md-ellipsis">
+    
+  
     Benchmark Management &amp; List Page
+  
+
     
   </span>
 </a>
@@ -469,7 +565,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../Competition-Detail-Page/">
 <span class="md-ellipsis">
+    
+  
     Benchmark Detail Page
+  
+
     
   </span>
 </a>
@@ -477,7 +577,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../Resource-Management/">
 <span class="md-ellipsis">
+    
+  
     Ressource Management Submissions, Datasets/Programs, Tasks and Competition Bundles
+  
+
     
   </span>
 </a>
@@ -485,7 +589,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../Update-programs-or-data/">
 <span class="md-ellipsis">
+    
+  
     Update programs or data
+  
+
     
   </span>
 </a>
@@ -493,7 +601,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../Queue-Management/">
 <span class="md-ellipsis">
+    
+  
     Queue Management
+  
+
     
   </span>
 </a>
@@ -502,14 +614,22 @@
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox">
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
+    
+  
     Compute Worker Management &amp; Setup
+  
+
     
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
+    
+  
     Compute Worker Management &amp; Setup
+  
+
     
   </span>
 </a>
@@ -522,99 +642,90 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#install-docker">
 <span class="md-ellipsis">
-      Install Docker
+      
+        Install Docker
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#pull-compute-worker-image">
 <span class="md-ellipsis">
-      Pull Compute Worker Image
+      
+        Pull Compute Worker Image
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#start-cpu-worker">
 <span class="md-ellipsis">
-      Start CPU worker
+      
+        Start CPU worker
+      
     </span>
 </a>
-<nav aria-label="Start CPU worker" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#deprecated-method-one-liner">
-<span class="md-ellipsis">
-      Deprecated method (one liner)
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#start-gpu-worker">
 <span class="md-ellipsis">
-      Start GPU worker
+      
+        Start GPU worker
+      
     </span>
 </a>
-<nav aria-label="Start GPU worker" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#nvidia-docker-wrapper-deprecated-method">
-<span class="md-ellipsis">
-      NVIDIA-docker Wrapper (deprecated method)
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#check-logs">
 <span class="md-ellipsis">
-      Check logs
+      
+        Check logs
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#cleaning-up-periodically">
 <span class="md-ellipsis">
-      Cleaning up periodically
+      
+        Cleaning up periodically
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#keep-track-of-the-worker">
 <span class="md-ellipsis">
-      Keep track of the worker
+      
+        Keep track of the worker
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optional-put-data-directly-inside-the-compute-worker">
 <span class="md-ellipsis">
-      Optional: put data directly inside the compute worker
+      
+        Optional: put data directly inside the compute worker
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#building-compute-worker">
 <span class="md-ellipsis">
-      Building compute worker
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#worker-management">
-<span class="md-ellipsis">
-      Worker management
+      
+        Building compute worker
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-docker-image">
 <span class="md-ellipsis">
-      Update docker image
+      
+        Update docker image
+      
     </span>
 </a>
 </li>
@@ -624,7 +735,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../Compute-worker-installation-with-Podman/">
 <span class="md-ellipsis">
+    
+  
     Compute Worker Management with Podman
+  
+
     
   </span>
 </a>
@@ -632,7 +747,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../Server-status-page/">
 <span class="md-ellipsis">
+    
+  
     Server Status
+  
+
     
   </span>
 </a>
@@ -647,7 +766,11 @@
 <input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox">
 <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
 <span class="md-ellipsis">
+    
+  
     Developers and Administrators
+  
+
     
   </span>
 <span class="md-nav__icon md-icon"></span>
@@ -655,13 +778,21 @@
 <nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
-            Developers and Administrators
+            
+  
+    Developers and Administrators
+  
+
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Codabench-Installation/">
 <span class="md-ellipsis">
+    
+  
     Codabench Basic Installation Guide
+  
+
     
   </span>
 </a>
@@ -669,7 +800,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/How-to-deploy-Codabench-on-your-server/">
 <span class="md-ellipsis">
+    
+  
     How to Deploy a Server
+  
+
     
   </span>
 </a>
@@ -677,7 +812,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Administrator-procedures/">
 <span class="md-ellipsis">
+    
+  
     Administrative Procedures
+  
+
     
   </span>
 </a>
@@ -685,7 +824,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Codabench-Architecture/">
 <span class="md-ellipsis">
+    
+  
     Codabench Docker Architecture
+  
+
     
   </span>
 </a>
@@ -693,7 +836,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Submission-Docker-Container-Layout/">
 <span class="md-ellipsis">
+    
+  
     Submission Docker Container Layout
+  
+
     
   </span>
 </a>
@@ -701,7 +848,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Creating-and-Restoring-from-Backup/">
 <span class="md-ellipsis">
+    
+  
     Backups - Automating Creation and Restoring
+  
+
     
   </span>
 </a>
@@ -709,7 +860,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Submission-Process-Overview/">
 <span class="md-ellipsis">
+    
+  
     Submission Process Overview
+  
+
     
   </span>
 </a>
@@ -717,7 +872,23 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Robot-submissions/">
 <span class="md-ellipsis">
+    
+  
     Robot Submissions
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Developers_and_Administrators/Adding-e2e-tests/">
+<span class="md-ellipsis">
+    
+  
+    Adding Tests
+  
+
     
   </span>
 </a>
@@ -725,7 +896,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Running-tests/">
 <span class="md-ellipsis">
+    
+  
     Running Tests
+  
+
     
   </span>
 </a>
@@ -733,7 +908,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Automating-with-Selenium/">
 <span class="md-ellipsis">
+    
+  
     Automation
+  
+
     
   </span>
 </a>
@@ -741,7 +920,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Manual-validation/">
 <span class="md-ellipsis">
+    
+  
     Manual Validation
+  
+
     
   </span>
 </a>
@@ -749,34 +932,50 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Validation-and-deployment-of-pull-requests/">
 <span class="md-ellipsis">
+    
+  
     Validation and deplyement of pull requests
+  
+
     
   </span>
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4_13" type="checkbox">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4_14" type="checkbox">
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/">
 <span class="md-ellipsis">
+    
+  
     Upgrading Codabench
+  
+
     
   </span>
 </a>
-<label class="md-nav__link" for="__nav_4_13" id="__nav_4_13_label" tabindex="0">
+<label class="md-nav__link" for="__nav_4_14" id="__nav_4_14_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_4_13_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_4_13">
+<nav aria-expanded="false" aria-labelledby="__nav_4_14_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_14">
 <span class="md-nav__icon md-icon"></span>
-            Upgrading Codabench
+            
+  
+    Upgrading Codabench
+  
+
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Upgrade-RabbitMQ/">
 <span class="md-ellipsis">
+    
+  
     Upgrade RabbitMQ (version &lt; 1.0.0)
+  
+
     
   </span>
 </a>
@@ -784,7 +983,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Create-new-logos-for-each-competition/">
 <span class="md-ellipsis">
+    
+  
     Create new logos for each competitions (version &lt; 1.4.1)
+  
+
     
   </span>
 </a>
@@ -792,7 +995,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Worker-Docker-Image-manual-update/">
 <span class="md-ellipsis">
+    
+  
     Worker docker image manual update (version &lt; 1.3.1)
+  
+
     
   </span>
 </a>
@@ -800,7 +1007,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Add-line-into-.env-for-default-queue-worker-duration/">
 <span class="md-ellipsis">
+    
+  
     Add line in .env file for default worker queue duration (version &lt; 1.7.0)
+  
+
     
   </span>
 </a>
@@ -808,7 +1019,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Uncomment-a-line-in-your-.env-file/">
 <span class="md-ellipsis">
+    
+  
     Uncomment a line in your .env file (version &lt; 1.8.0)
+  
+
     
   </span>
 </a>
@@ -816,7 +1031,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Rebuilding-all-docker-images/">
 <span class="md-ellipsis">
+    
+  
     Rebuilding all docker images (version &lt; 1.9.2)
+  
+
     
   </span>
 </a>
@@ -824,7 +1043,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Move-the-last-storage_inconsistency-files-from--logs-folder-to--var-logs--folder/">
 <span class="md-ellipsis">
+    
+  
     Move the latest storage_inconsistency files from the logs folder to var/logs (version &lt; 1.12.0)
+  
+
     
   </span>
 </a>
@@ -832,7 +1055,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Submissions-and-Participants-Counts/">
 <span class="md-ellipsis">
+    
+  
     Submissions and Participants count (version &lt; 1.14.0)
+  
+
     
   </span>
 </a>
@@ -840,7 +1067,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Homepage-counters/">
 <span class="md-ellipsis">
+    
+  
     Homepage Counters (version &lt; 1.15.0)
+  
+
     
   </span>
 </a>
@@ -848,7 +1079,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/User-removal/">
 <span class="md-ellipsis">
+    
+  
     User Removal (version &lt; 1.17.0)
+  
+
     
   </span>
 </a>
@@ -856,7 +1091,83 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Database-size-fixes/">
 <span class="md-ellipsis">
+    
+  
     Database size fix (version &lt; 1.18.0)
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Hide-output/">
+<span class="md-ellipsis">
+    
+  
+    Hide Output update (version &lt; 1.19.0)
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Django-3/">
+<span class="md-ellipsis">
+    
+  
+    Django 3 Upgrades (version &lt; 1.20.0)
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Minio-image/">
+<span class="md-ellipsis">
+    
+  
+    Minio Image Upgrade (version &lt; 1.21.0)
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Docker-py/">
+<span class="md-ellipsis">
+    
+  
+    Docker-Py (version &lt; 1.22.0)
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Django-4/">
+<span class="md-ellipsis">
+    
+  
+    Django 4 Upgrades (version &lt; 1.23.0)
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Developers_and_Administrators/Upgrading_Codabench/Postgres-18/">
+<span class="md-ellipsis">
+    
+  
+    Postgres 18 upgrade (version &lt; 1.24.0)
+  
+
     
   </span>
 </a>
@@ -871,7 +1182,11 @@
 <input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox">
 <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
 <span class="md-ellipsis">
+    
+  
     Newsletters Archive
+  
+
     
   </span>
 <span class="md-nav__icon md-icon"></span>
@@ -879,13 +1194,33 @@
 <nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
-            Newsletters Archive
+            
+  
+    Newsletters Archive
+  
+
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Newsletters_Archive/CodaLab-in-2024/">
 <span class="md-ellipsis">
+    
+  
     2024
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Newsletters_Archive/CodaLab-in-2025/">
+<span class="md-ellipsis">
+    
+  
+    2025
+  
+
     
   </span>
 </a>
@@ -898,7 +1233,11 @@
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../../../Contribute/">
 <span class="md-ellipsis">
+    
+  
     How you can contribue
+  
+
     
   </span>
 </a>
@@ -909,13 +1248,21 @@
 <nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_6">
 <span class="md-nav__icon md-icon"></span>
-            How you can contribue
+            
+  
+    How you can contribue
+  
+
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Contribute/contributing/">
 <span class="md-ellipsis">
+    
+  
     Contributing
+  
+
     
   </span>
 </a>
@@ -926,7 +1273,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Project_CodaBench_FAQ/">
 <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
     
   </span>
 </a>
@@ -934,7 +1285,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../contact-us/">
 <span class="md-ellipsis">
+    
+  
     Contact Us
+  
+
     
   </span>
 </a>
@@ -956,99 +1311,90 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#install-docker">
 <span class="md-ellipsis">
-      Install Docker
+      
+        Install Docker
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#pull-compute-worker-image">
 <span class="md-ellipsis">
-      Pull Compute Worker Image
+      
+        Pull Compute Worker Image
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#start-cpu-worker">
 <span class="md-ellipsis">
-      Start CPU worker
+      
+        Start CPU worker
+      
     </span>
 </a>
-<nav aria-label="Start CPU worker" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#deprecated-method-one-liner">
-<span class="md-ellipsis">
-      Deprecated method (one liner)
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#start-gpu-worker">
 <span class="md-ellipsis">
-      Start GPU worker
+      
+        Start GPU worker
+      
     </span>
 </a>
-<nav aria-label="Start GPU worker" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#nvidia-docker-wrapper-deprecated-method">
-<span class="md-ellipsis">
-      NVIDIA-docker Wrapper (deprecated method)
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#check-logs">
 <span class="md-ellipsis">
-      Check logs
+      
+        Check logs
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#cleaning-up-periodically">
 <span class="md-ellipsis">
-      Cleaning up periodically
+      
+        Cleaning up periodically
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#keep-track-of-the-worker">
 <span class="md-ellipsis">
-      Keep track of the worker
+      
+        Keep track of the worker
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optional-put-data-directly-inside-the-compute-worker">
 <span class="md-ellipsis">
-      Optional: put data directly inside the compute worker
+      
+        Optional: put data directly inside the compute worker
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#building-compute-worker">
 <span class="md-ellipsis">
-      Building compute worker
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#worker-management">
-<span class="md-ellipsis">
-      Worker management
+      
+        Building compute worker
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-docker-image">
 <span class="md-ellipsis">
-      Update docker image
+      
+        Update docker image
+      
     </span>
 </a>
 </li>
@@ -1087,26 +1433,48 @@
 <p>b) Install manually, following the steps at: https://docs.docker.com/install/</p>
 <h2 id="pull-compute-worker-image">Pull Compute Worker Image<a class="headerlink" href="#pull-compute-worker-image" title="Permanent link">¶</a></h2>
 <p>On the compute worker machine, run the following command in a shell:
-</p><div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>docker<span class="w"> </span>pull<span class="w"> </span>codalab/competitions-v2-compute-worker
+</p><div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>docker<span class="w"> </span>pull<span class="w"> </span>codalab/codabench-compute-worker
 </span></code></pre></div><p></p>
 <p>That will pull the latest image for the v2 worker. For specific versions, see the docker hub page at:
-https://hub.docker.com/r/codalab/competitions-v2-compute-worker/tags</p>
+https://hub.docker.com/r/codalab/codabench-compute-worker/tags</p>
 <h2 id="start-cpu-worker">Start CPU worker<a class="headerlink" href="#start-cpu-worker" title="Permanent link">¶</a></h2>
+<p>You will get your Broker URL from the instance. More information about Queues <a href="../Queue-Management/">here</a></p>
 <p>Make a file <code>.env</code> and put this in it:
-</p><div class="language-ini highlight"><span class="filename">.env</span><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1"># Queue URL</span>
-</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="na">BROKER_URL</span><span class="o">=</span><span class="s">&lt;desired broker URL&gt;</span>
-</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c1"># Location to store submissions/cache -- absolute path!</span>
-</span><span id="__span-2-5"><a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="na">HOST_DIRECTORY</span><span class="o">=</span><span class="s">/codabench</span>
-</span><span id="__span-2-6"><a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a>
-</span><span id="__span-2-7"><a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="c1"># If SSL isn't enabled, then comment or remove the following line</span>
-</span><span id="__span-2-8"><a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="na">BROKER_USE_SSL</span><span class="o">=</span><span class="s">True</span>
-</span></code></pre></div><p></p>
+</p><div class="language-ini highlight"><span class="filename">.env</span><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1">#######################################################################</span>
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="c1">#                       Connection URL                                #</span>
+</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="c1">#######################################################################</span>
+</span><span id="__span-2-4"><a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="na">BROKER_URL</span><span class="o">=</span><span class="s">pyamqp://&lt;login&gt;:&lt;password&gt;@www.codabench.org:5672/</span>
+</span><span id="__span-2-5"><a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="c1"># If SSL isn't enabled, then comment or remove the following line</span>
+</span><span id="__span-2-6"><a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="na">BROKER_USE_SSL</span><span class="o">=</span><span class="s">True</span>
+</span><span id="__span-2-7"><a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="c1">#######################################################################</span>
+</span><span id="__span-2-9"><a href="#__codelineno-2-9" id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="c1">#                       Temporary Storage                             #</span>
+</span><span id="__span-2-10"><a href="#__codelineno-2-10" id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="c1">#######################################################################</span>
+</span><span id="__span-2-11"><a href="#__codelineno-2-11" id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="na">HOST_DIRECTORY</span><span class="o">=</span><span class="s">/codabench</span>
+</span><span id="__span-2-12"><a href="#__codelineno-2-12" id="__codelineno-2-12" name="__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a href="#__codelineno-2-13" id="__codelineno-2-13" name="__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a href="#__codelineno-2-14" id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="c1">#######################################################################</span>
+</span><span id="__span-2-15"><a href="#__codelineno-2-15" id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="c1">#                       Runtime                                       #</span>
+</span><span id="__span-2-16"><a href="#__codelineno-2-16" id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="c1">#######################################################################</span>
+</span><span id="__span-2-17"><a href="#__codelineno-2-17" id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="na">CONTAINER_ENGINE_EXECUTABLE</span><span class="o">=</span><span class="s">docker</span>
+</span><span id="__span-2-18"><a href="#__codelineno-2-18" id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="c1">#USE_GPU=True</span>
+</span><span id="__span-2-19"><a href="#__codelineno-2-19" id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="c1">#GPU_DEVICE=nvidia.com/gpu=all</span>
+</span><span id="__span-2-20"><a href="#__codelineno-2-20" id="__codelineno-2-20" name="__codelineno-2-20"></a>
+</span><span id="__span-2-21"><a href="#__codelineno-2-21" id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="c1">#######################################################################</span>
+</span><span id="__span-2-22"><a href="#__codelineno-2-22" id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="c1">#                       Network                                       #</span>
+</span><span id="__span-2-23"><a href="#__codelineno-2-23" id="__codelineno-2-23" name="__codelineno-2-23"></a><span class="c1">#######################################################################</span>
+</span><span id="__span-2-24"><a href="#__codelineno-2-24" id="__codelineno-2-24" name="__codelineno-2-24"></a><span class="c1">#COMPETITION_CONTAINER_NETWORK_DISABLED=False</span>
+</span><span id="__span-2-25"><a href="#__codelineno-2-25" id="__codelineno-2-25" name="__codelineno-2-25"></a>
+</span><span id="__span-2-26"><a href="#__codelineno-2-26" id="__codelineno-2-26" name="__codelineno-2-26"></a><span class="c1">#COMPETITION_CONTAINER_HTTP_PROXY=https://example_proxy:123</span>
+</span><span id="__span-2-27"><a href="#__codelineno-2-27" id="__codelineno-2-27" name="__codelineno-2-27"></a><span class="c1">#COMPETITION_CONTAINER_HTTPS_PROXY=http://example_proxy:1233</span>
+</span></code></pre></div>
+By default, the competition container created by the compute worker has access to internet. If you want to remove this access, you can uncomment <code>COMPETITION_CONTAINER_NETWORK_DISABLED</code> and set it to <code>True</code><p></p>
+<p>If the VM hosting the compute worker is behind a proxy, and you want to allow the competition container to access internet, you will also need to set the proxy for the competition container to use, in which case you can use <code>COMPETITION_CONTAINER_HTTP_PROXY</code></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
 <li>
-<p>The broker URL is a unique identifier of the job queue that the worker should listen to. To create a queue or obtain the broker URL of an existing queue, you can refer to <a href="../Queue-Management/">Queue Management</a> wiki page.</p>
+<p>The broker URL is a unique identifier of the job queue that the worker should listen to. To create a queue or obtain the broker URL of an existing queue, you can refer to <a href="../Queue-Management/">Queue Management</a> docs page.</p>
 </li>
 <li>
 <p><code>/codabench</code> -- this path needs to be volumed into <code>/codabench</code> on the worker, as you can see below. You can select another location if convenient.</p>
@@ -1117,7 +1485,7 @@ https://hub.docker.com/r/codalab/competitions-v2-compute-worker/tags</p>
 </p><div class="language-yaml highlight"><span class="filename">docker-compose.yml</span><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1"># Codabench Worker</span>
 </span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="nt">services</span><span class="p">:</span>
 </span><span id="__span-3-3"><a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="nt">worker</span><span class="p">:</span>
-</span><span id="__span-3-4"><a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">codalab/competitions-v2-compute-worker:latest</span>
+</span><span id="__span-3-4"><a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">codalab/codabench-compute-worker:latest</span>
 </span><span id="__span-3-5"><a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">        </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">compute_worker</span>
 </span><span id="__span-3-6"><a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">        </span><span class="nt">volumes</span><span class="p">:</span>
 </span><span id="__span-3-7"><a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/codabench:/codabench</span>
@@ -1135,96 +1503,72 @@ https://hub.docker.com/r/codalab/competitions-v2-compute-worker/tags</p>
 <p class="admonition-title">Note</p>
 <p><code>hostname: ${HOSTNAME}</code> allows you to set the hostname of the compute worker container, which will then be shown in the <a href="../Server-status-page/">server status</a> page on Codabench. This can be set to anything you want, by setting the <code>HOSTNAME</code> environment variable on the machine hosting the Compute Worker, then uncommenting the line the <code>docker-compose.yml</code> before launching the compute worker.</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Starting from <code>codalab/competitions-v2-compute-worker:v1.22</code> the images are now unifed for Podman and Docker CPU/GPU</p>
+</div>
 <p>You can then launch the worker by running this command in the terminal where the <code>docker-compose.yml</code> file is located:
 </p><div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
 </span></code></pre></div><p></p>
-<h3 id="deprecated-method-one-liner">Deprecated method (one liner)<a class="headerlink" href="#deprecated-method-one-liner" title="Permanent link">¶</a></h3>
-<p>Alternately, you can use the docker run below:
-</p><div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>docker<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">    </span>-v<span class="w"> </span>/codabench:/codabench<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-3"><a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">    </span>-v<span class="w"> </span>/var/run/docker.sock:/var/run/docker.sock<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-4"><a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">    </span>-d<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-5"><a href="#__codelineno-5-5" id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">    </span>--env-file<span class="w"> </span>.env<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-6"><a href="#__codelineno-5-6" id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">    </span>--name<span class="w"> </span>compute_worker<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-7"><a href="#__codelineno-5-7" id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="w">    </span>--restart<span class="w"> </span>unless-stopped<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-8"><a href="#__codelineno-5-8" id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="w">    </span>--log-opt<span class="w"> </span>max-size<span class="o">=</span>50m<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-9"><a href="#__codelineno-5-9" id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="w">    </span>--log-opt<span class="w"> </span>max-file<span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-10"><a href="#__codelineno-5-10" id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="w">    </span>codalab/competitions-v2-compute-worker:latest
-</span></code></pre></div><p></p>
 <h2 id="start-gpu-worker">Start GPU worker<a class="headerlink" href="#start-gpu-worker" title="Permanent link">¶</a></h2>
 <p>Make a <code>.env</code> file, as explained in CPU worker instructions.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Don't forget the <code>USE_GPU=true</code> in the <code>.env</code> if you want to use a GPU runner</p>
+</div>
 <p>Then, install the NVIDIA toolkit:
 <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/index.html">Nvidia toolkit installation instructions</a></p>
 <p>Once you install and configure the NVIDIA container toolkit, you can create a <code>docker-compose.yml</code> file with the following content:
-</p><div class="language-yaml highlight"><span class="filename">docker-compose.yml</span><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1"># Codabench GPU worker (NVIDIA)</span>
-</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="nt">services</span><span class="p">:</span>
-</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">    </span><span class="nt">worker</span><span class="p">:</span>
-</span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">codalab/competitions-v2-compute-worker:gpu1.3</span>
-</span><span id="__span-6-5"><a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">        </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">compute_worker</span>
-</span><span id="__span-6-6"><a href="#__codelineno-6-6" id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="w">        </span><span class="nt">volumes</span><span class="p">:</span>
-</span><span id="__span-6-7"><a href="#__codelineno-6-7" id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/codabench:/codabench</span>
-</span><span id="__span-6-8"><a href="#__codelineno-6-8" id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/run/docker.sock:/var/run/docker.sock</span>
-</span><span id="__span-6-9"><a href="#__codelineno-6-9" id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="w">        </span><span class="nt">env_file</span><span class="p">:</span>
-</span><span id="__span-6-10"><a href="#__codelineno-6-10" id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.env</span>
-</span><span id="__span-6-11"><a href="#__codelineno-6-11" id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="w">        </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
-</span><span id="__span-6-12"><a href="#__codelineno-6-12" id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="w">        </span><span class="c1">#hostname: ${HOSTNAME}</span>
-</span><span id="__span-6-13"><a href="#__codelineno-6-13" id="__codelineno-6-13" name="__codelineno-6-13"></a><span class="w">        </span><span class="nt">logging</span><span class="p">:</span>
-</span><span id="__span-6-14"><a href="#__codelineno-6-14" id="__codelineno-6-14" name="__codelineno-6-14"></a><span class="w">            </span><span class="nt">options</span><span class="p">:</span>
-</span><span id="__span-6-15"><a href="#__codelineno-6-15" id="__codelineno-6-15" name="__codelineno-6-15"></a><span class="w">                </span><span class="nt">max-size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">50m</span>
-</span><span id="__span-6-16"><a href="#__codelineno-6-16" id="__codelineno-6-16" name="__codelineno-6-16"></a><span class="w">                </span><span class="nt">max-file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span>
-</span><span id="__span-6-17"><a href="#__codelineno-6-17" id="__codelineno-6-17" name="__codelineno-6-17"></a><span class="w">        </span><span class="nt">runtime</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nvidia</span>
-</span><span id="__span-6-18"><a href="#__codelineno-6-18" id="__codelineno-6-18" name="__codelineno-6-18"></a><span class="w">        </span><span class="nt">deploy</span><span class="p">:</span>
-</span><span id="__span-6-19"><a href="#__codelineno-6-19" id="__codelineno-6-19" name="__codelineno-6-19"></a><span class="w">            </span><span class="nt">resources</span><span class="p">:</span>
-</span><span id="__span-6-20"><a href="#__codelineno-6-20" id="__codelineno-6-20" name="__codelineno-6-20"></a><span class="w">                </span><span class="nt">reservations</span><span class="p">:</span>
-</span><span id="__span-6-21"><a href="#__codelineno-6-21" id="__codelineno-6-21" name="__codelineno-6-21"></a><span class="w">                    </span><span class="nt">devices</span><span class="p">:</span>
-</span><span id="__span-6-22"><a href="#__codelineno-6-22" id="__codelineno-6-22" name="__codelineno-6-22"></a><span class="w">                        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">driver</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nvidia</span>
-</span><span id="__span-6-23"><a href="#__codelineno-6-23" id="__codelineno-6-23" name="__codelineno-6-23"></a><span class="w">                          </span><span class="nt">count</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">all</span>
-</span><span id="__span-6-24"><a href="#__codelineno-6-24" id="__codelineno-6-24" name="__codelineno-6-24"></a><span class="w">                          </span><span class="nt">capabilities</span><span class="p">:</span>
-</span><span id="__span-6-25"><a href="#__codelineno-6-25" id="__codelineno-6-25" name="__codelineno-6-25"></a><span class="w">                              </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gpu</span>
+</p><div class="language-yaml highlight"><span class="filename">docker-compose.yml</span><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1"># Codabench GPU worker (NVIDIA)</span>
+</span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="nt">services</span><span class="p">:</span>
+</span><span id="__span-5-3"><a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">    </span><span class="nt">worker</span><span class="p">:</span>
+</span><span id="__span-5-4"><a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">codalab/codabench-compute-worker:latest</span>
+</span><span id="__span-5-5"><a href="#__codelineno-5-5" id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">        </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">compute_worker</span>
+</span><span id="__span-5-6"><a href="#__codelineno-5-6" id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">        </span><span class="nt">volumes</span><span class="p">:</span>
+</span><span id="__span-5-7"><a href="#__codelineno-5-7" id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/codabench:/codabench</span>
+</span><span id="__span-5-8"><a href="#__codelineno-5-8" id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/run/docker.sock:/var/run/docker.sock</span>
+</span><span id="__span-5-9"><a href="#__codelineno-5-9" id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="w">        </span><span class="nt">env_file</span><span class="p">:</span>
+</span><span id="__span-5-10"><a href="#__codelineno-5-10" id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.env</span>
+</span><span id="__span-5-11"><a href="#__codelineno-5-11" id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="w">        </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
+</span><span id="__span-5-12"><a href="#__codelineno-5-12" id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="w">        </span><span class="c1">#hostname: ${HOSTNAME}</span>
+</span><span id="__span-5-13"><a href="#__codelineno-5-13" id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="w">        </span><span class="nt">logging</span><span class="p">:</span>
+</span><span id="__span-5-14"><a href="#__codelineno-5-14" id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="w">            </span><span class="nt">options</span><span class="p">:</span>
+</span><span id="__span-5-15"><a href="#__codelineno-5-15" id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="w">                </span><span class="nt">max-size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">50m</span>
+</span><span id="__span-5-16"><a href="#__codelineno-5-16" id="__codelineno-5-16" name="__codelineno-5-16"></a><span class="w">                </span><span class="nt">max-file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span>
 </span></code></pre></div><p></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><code>hostname: ${HOSTNAME}</code> allows you to set the hostname of the compute worker container, which will then be shown in the <a href="../Server-status-page/">server status</a> page on Codabench. This can be set to anything you want, by setting the <code>HOSTNAME</code> environment variable on the machine hosting the Compute Worker, then uncommenting the line the <code>docker-compose.yml</code> before launching the compute worker.</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Starting from <code>codalab/competitions-v2-compute-worker:v1.22</code> the images are now unifed for Podman and Docker CPU/GPU</p>
+</div>
 <p>You can then launch the worker by running this command in the terminal where the <code>docker-compose.yml</code> file is located:
-</p><div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
-</span></code></pre></div><p></p>
-<h3 id="nvidia-docker-wrapper-deprecated-method">NVIDIA-docker Wrapper (deprecated method)<a class="headerlink" href="#nvidia-docker-wrapper-deprecated-method" title="Permanent link">¶</a></h3>
-<p><a href="https://github.com/NVIDIA/nvidia-docker#quickstart">Nvidia installation instructions</a>
-</p><div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>nvidia-docker<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-2"><a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">    </span>-v<span class="w"> </span>/codabench:/codabench<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-3"><a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="w">    </span>-v<span class="w"> </span>/var/run/docker.sock:/var/run/docker.sock<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-4"><a href="#__codelineno-8-4" id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">    </span>-v<span class="w"> </span>/var/lib/nvidia-docker/nvidia-docker.sock:/var/lib/nvidia-docker/nvidia-docker.sock<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-5"><a href="#__codelineno-8-5" id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="w">    </span>-d<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-6"><a href="#__codelineno-8-6" id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="w">    </span>--env-file<span class="w"> </span>.env<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-7"><a href="#__codelineno-8-7" id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="w">    </span>--name<span class="w"> </span>compute_worker<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-8"><a href="#__codelineno-8-8" id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="w">    </span>--restart<span class="w"> </span>unless-stopped<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-9"><a href="#__codelineno-8-9" id="__codelineno-8-9" name="__codelineno-8-9"></a><span class="w">    </span>--log-opt<span class="w"> </span>max-size<span class="o">=</span>50m<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-10"><a href="#__codelineno-8-10" id="__codelineno-8-10" name="__codelineno-8-10"></a><span class="w">    </span>--log-opt<span class="w"> </span>max-file<span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-11"><a href="#__codelineno-8-11" id="__codelineno-8-11" name="__codelineno-8-11"></a><span class="w">    </span>codalab/competitions-v2-compute-worker:gpu
+</p><div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
 </span></code></pre></div><p></p>
 <p>Note that a competition docker image including CUDA and other GPU libraries, such as <code>codalab/codalab-legacy:gpu</code>, is then required.</p>
 <h2 id="check-logs">Check logs<a class="headerlink" href="#check-logs" title="Permanent link">¶</a></h2>
 <p>Use the following command to check logs and ensure everything is working fine:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>docker<span class="w"> </span>logs<span class="w"> </span>-f<span class="w"> </span>compute_worker
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>docker<span class="w"> </span>logs<span class="w"> </span>-f<span class="w"> </span>compute_worker
 </span></code></pre></div>
 <h2 id="cleaning-up-periodically">Cleaning up periodically<a class="headerlink" href="#cleaning-up-periodically" title="Permanent link">¶</a></h2>
 <p>It is recommended to clean up docker images and containers regularly to avoid filling up the storage.</p>
 <ol>
 <li>Run the following command:</li>
 </ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>sudo<span class="w"> </span>crontab<span class="w"> </span>-e
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>sudo<span class="w"> </span>crontab<span class="w"> </span>-e
 </span></code></pre></div>
 <ol>
 <li>Add the following line:</li>
 </ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a>@daily<span class="w"> </span>docker<span class="w"> </span>system<span class="w"> </span>prune<span class="w"> </span>-af
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>@daily<span class="w"> </span>docker<span class="w"> </span>system<span class="w"> </span>prune<span class="w"> </span>-af
 </span></code></pre></div>
 <h2 id="keep-track-of-the-worker">Keep track of the worker<a class="headerlink" href="#keep-track-of-the-worker" title="Permanent link">¶</a></h2>
 <p>It is recommended to store the docker container hostname to identify the worker. This way, it is easier to troubleshoot issues when having multiple workers in one queue. To get the hostname, simply run <code>docker ps</code> and look at the key <code>CONTAINER ID</code> at the beginning of the output:</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-12-1"><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a>$<span class="w"> </span>docker<span class="w"> </span>ps
-</span><span id="__span-12-2"><a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a>CONTAINER<span class="w"> </span>ID<span class="w">   </span>IMAGE<span class="w">                                           </span>COMMAND<span class="w">                  </span>CREATED<span class="w">      </span>STATUS<span class="w">      </span>PORTS<span class="w">     </span>NAMES
-</span><span id="__span-12-3"><a href="#__codelineno-12-3" id="__codelineno-12-3" name="__codelineno-12-3"></a>1a2b3d4e5f67<span class="w">   </span>codalab/competitions-v2-compute-worker:latest<span class="w">   </span><span class="s2">"/bin/sh -c 'celery …"</span><span class="w">   </span><span class="m">3</span><span class="w"> </span>days<span class="w"> </span>ago<span class="w">   </span>Up<span class="w"> </span><span class="m">3</span><span class="w"> </span>days<span class="w">             </span>compute_worker
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>$<span class="w"> </span>docker<span class="w"> </span>ps
+</span><span id="__span-10-2"><a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a>CONTAINER<span class="w"> </span>ID<span class="w">   </span>IMAGE<span class="w">                                           </span>COMMAND<span class="w">                  </span>CREATED<span class="w">      </span>STATUS<span class="w">      </span>PORTS<span class="w">     </span>NAMES
+</span><span id="__span-10-3"><a href="#__codelineno-10-3" id="__codelineno-10-3" name="__codelineno-10-3"></a>1a2b3d4e5f67<span class="w">   </span>codalab/codabench-compute-worker:latest<span class="w">   </span><span class="s2">"/bin/sh -c 'celery …"</span><span class="w">   </span><span class="m">3</span><span class="w"> </span>days<span class="w"> </span>ago<span class="w">   </span>Up<span class="w"> </span><span class="m">3</span><span class="w"> </span>days<span class="w">             </span>compute_worker
 </span></code></pre></div>
 <p>For each submission made to your queue, you can know what worker computed the ingestion and the scoring jobs in the <a href="../Server-status-page/">server status page</a>.</p>
 <hr>
@@ -1234,6 +1578,12 @@ https://hub.docker.com/r/codalab/competitions-v2-compute-worker/tags</p>
 <p class="admonition-title">If you have several workers in your queue, remember to have the data accessible for each one.</p>
 </div>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto"><img alt="" src="../_attachments/4259c2e5-d119-4ca2-8fc8-b69196f1528c_17534367097493236.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure to make the owner of the folder(s) and file(s) the same as the one launching the compute worker.<br>
+   - <code>root</code> for Docker rootfull<br>
+   - <code>codalab</code> for Podman and Docker rootless if you created a user name codalab to launch podman and docker rootless from</p>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">If you simply wish to set up some compute workers to increase the computing power of your benchmark, you don't need to scroll this page any further.</p>
 </div>
@@ -1241,73 +1591,23 @@ https://hub.docker.com/r/codalab/competitions-v2-compute-worker/tags</p>
 <h2 id="building-compute-worker">Building compute worker<a class="headerlink" href="#building-compute-worker" title="Permanent link">¶</a></h2>
 <p>This is helpful only if you want to build the compute worker image. It is not needed if you simply want to set up compute workers to run submissions.</p>
 <p>To build the normal image:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>codalab/competitions-v2-compute-worker:latest<span class="w"> </span>-f<span class="w"> </span>Dockerfile.compute_worker<span class="w"> </span>.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>codalab/codabench-compute-worker:latest<span class="w"> </span>-f<span class="w"> </span>packaging/container/Containerfile.compute_worker<span class="w"> </span>.
 </span></code></pre></div>
-<p>To build the GPU version:
-</p><div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>codalab/competitions-v2-compute-worker:gpu<span class="w"> </span>-f<span class="w"> </span>Dockerfile.compute_worker_gpu<span class="w"> </span>.
-</span></code></pre></div><p></p>
 <p>To update the image (add tag <code>:latest</code>, <code>:gpu</code> or else if needed)</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a>docker<span class="w"> </span>push<span class="w"> </span>codalab/competitions-v2-compute-worker
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a>docker<span class="w"> </span>push<span class="w"> </span>codalab/codabench-compute-worker
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">If you have running compute workers, you'll need to pull again the image and to restart the workers to take into account the changes.</p>
 </div>
-<h2 id="worker-management">Worker management<a class="headerlink" href="#worker-management" title="Permanent link">¶</a></h2>
-<p>Outside of docker containers install <a href="http://fabfile.org/">Fabric</a> like so:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a>pip<span class="w"> </span>install<span class="w"> </span>fab-classic<span class="o">==</span><span class="m">1</span>.17.0
-</span></code></pre></div>
-<p>Create a <code>server_config.yaml</code> in the root of this repository using:
-</p><div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a>cp server_config_sample.yaml server_config.yaml
-</span></code></pre></div><p></p>
-<p>Below is an example <code>server_config.yaml</code> that defines 2 roles <code>comp-gpu</code> and <code>comp-cpu</code>,
-one with GPU style workers (<code>is_gpu</code> and the GPU <code>docker_image</code>) and one with CPU style workers</p>
-<div class="language-yaml highlight"><span class="filename">server_config.yaml</span><pre><span></span><code><span id="__span-18-1"><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="nt">comp-gpu</span><span class="p">:</span>
-</span><span id="__span-18-2"><a href="#__codelineno-18-2" id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="w">  </span><span class="nt">hosts</span><span class="p">:</span>
-</span><span id="__span-18-3"><a href="#__codelineno-18-3" id="__codelineno-18-3" name="__codelineno-18-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu@12.34.56.78</span>
-</span><span id="__span-18-4"><a href="#__codelineno-18-4" id="__codelineno-18-4" name="__codelineno-18-4"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu@12.34.56.79</span>
-</span><span id="__span-18-5"><a href="#__codelineno-18-5" id="__codelineno-18-5" name="__codelineno-18-5"></a><span class="w">  </span><span class="nt">broker_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pyamqp://user:pass@host:port/vhost-gpu</span>
-</span><span id="__span-18-6"><a href="#__codelineno-18-6" id="__codelineno-18-6" name="__codelineno-18-6"></a><span class="w">  </span><span class="nt">is_gpu</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-</span><span id="__span-18-7"><a href="#__codelineno-18-7" id="__codelineno-18-7" name="__codelineno-18-7"></a><span class="w">  </span><span class="nt">docker_image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">codalab/competitions-v2-compute-worker:gpu</span>
-</span><span id="__span-18-8"><a href="#__codelineno-18-8" id="__codelineno-18-8" name="__codelineno-18-8"></a>
-</span><span id="__span-18-9"><a href="#__codelineno-18-9" id="__codelineno-18-9" name="__codelineno-18-9"></a><span class="nt">comp-cpu</span><span class="p">:</span>
-</span><span id="__span-18-10"><a href="#__codelineno-18-10" id="__codelineno-18-10" name="__codelineno-18-10"></a><span class="w">  </span><span class="nt">hosts</span><span class="p">:</span>
-</span><span id="__span-18-11"><a href="#__codelineno-18-11" id="__codelineno-18-11" name="__codelineno-18-11"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu@12.34.56.80</span>
-</span><span id="__span-18-12"><a href="#__codelineno-18-12" id="__codelineno-18-12" name="__codelineno-18-12"></a><span class="w">  </span><span class="nt">broker_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pyamqp://user:pass@host:port/vhost-cpu</span>
-</span><span id="__span-18-13"><a href="#__codelineno-18-13" id="__codelineno-18-13" name="__codelineno-18-13"></a><span class="w">  </span><span class="nt">is_gpu</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
-</span><span id="__span-18-14"><a href="#__codelineno-18-14" id="__codelineno-18-14" name="__codelineno-18-14"></a><span class="w">  </span><span class="nt">docker_image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">codalab/competitions-v2-compute-worker:latest</span>
-</span></code></pre></div>
-<p>You can of course create your own <code>docker_image</code> and specify it here.</p>
-<p>You can execute commands against a role:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a>fab<span class="w"> </span>-R<span class="w"> </span>comp-gpu<span class="w"> </span>status
-</span><span id="__span-19-2"><a href="#__codelineno-19-2" id="__codelineno-19-2" name="__codelineno-19-2"></a>..
-</span><span id="__span-19-3"><a href="#__codelineno-19-3" id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="o">[</span>ubuntu@12.34.56.78<span class="o">]</span><span class="w"> </span>out:<span class="w"> </span>CONTAINER<span class="w"> </span>ID<span class="w">        </span>IMAGE<span class="w">                                           </span>COMMAND<span class="w">                  </span>CREATED<span class="w">             </span>STATUS<span class="w">              </span>PORTS<span class="w">               </span>NAMES
-</span><span id="__span-19-4"><a href="#__codelineno-19-4" id="__codelineno-19-4" name="__codelineno-19-4"></a><span class="o">[</span>ubuntu@12.34.56.78<span class="o">]</span><span class="w"> </span>out:<span class="w"> </span>1d318268bee1<span class="w">        </span>codalab/competitions-v2-compute-worker:gpu<span class="w">   </span><span class="s2">"/bin/sh -c 'celery …"</span><span class="w">   </span><span class="m">2</span><span class="w"> </span>hours<span class="w"> </span>ago<span class="w">         </span>Up<span class="w"> </span><span class="m">2</span><span class="w"> </span>hours<span class="w">                              </span>hardcore_greider
-</span><span id="__span-19-5"><a href="#__codelineno-19-5" id="__codelineno-19-5" name="__codelineno-19-5"></a>..
-</span><span id="__span-19-6"><a href="#__codelineno-19-6" id="__codelineno-19-6" name="__codelineno-19-6"></a>
-</span><span id="__span-19-7"><a href="#__codelineno-19-7" id="__codelineno-19-7" name="__codelineno-19-7"></a>fab<span class="w"> </span>-R<span class="w"> </span>comp-gpu<span class="w"> </span>update
-</span><span id="__span-19-8"><a href="#__codelineno-19-8" id="__codelineno-19-8" name="__codelineno-19-8"></a>..
-</span><span id="__span-19-9"><a href="#__codelineno-19-9" id="__codelineno-19-9" name="__codelineno-19-9"></a><span class="o">(</span>updates<span class="w"> </span>workers<span class="o">)</span>
-</span></code></pre></div>
-<p>See available commands with <code>fab -l</code></p>
 <h2 id="update-docker-image">Update docker image<a class="headerlink" href="#update-docker-image" title="Permanent link">¶</a></h2>
 <p>If the compute worker docker image was updated, you can reflect the changes using the following commands.</p>
 <p>Check no job is running:</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-20-1"><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a>docker<span class="w"> </span>ps
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-13-1"><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a>docker<span class="w"> </span>ps
 </span></code></pre></div>
 <p>Update the worker:</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-21-1"><a href="#__codelineno-21-1" id="__codelineno-21-1" name="__codelineno-21-1"></a>docker<span class="w"> </span>stop<span class="w"> </span>compute_worker
-</span><span id="__span-21-2"><a href="#__codelineno-21-2" id="__codelineno-21-2" name="__codelineno-21-2"></a>docker<span class="w"> </span>rm<span class="w"> </span>compute_worker
-</span><span id="__span-21-3"><a href="#__codelineno-21-3" id="__codelineno-21-3" name="__codelineno-21-3"></a>docker<span class="w"> </span>pull<span class="w"> </span>codalab/competitions-v2-compute-worker:latest<span class="w">    </span><span class="c1"># or other relevant docker image</span>
-</span><span id="__span-21-4"><a href="#__codelineno-21-4" id="__codelineno-21-4" name="__codelineno-21-4"></a>docker<span class="w"> </span>run<span class="w"> </span><span class="se">\ </span><span class="w">                                                </span><span class="c1"># or docker compose up -d</span>
-</span><span id="__span-21-5"><a href="#__codelineno-21-5" id="__codelineno-21-5" name="__codelineno-21-5"></a><span class="w">    </span>-v<span class="w"> </span>/codabench:/codabench<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-21-6"><a href="#__codelineno-21-6" id="__codelineno-21-6" name="__codelineno-21-6"></a><span class="w">    </span>-v<span class="w"> </span>/var/run/docker.sock:/var/run/docker.sock<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-21-7"><a href="#__codelineno-21-7" id="__codelineno-21-7" name="__codelineno-21-7"></a><span class="w">    </span>-d<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-21-8"><a href="#__codelineno-21-8" id="__codelineno-21-8" name="__codelineno-21-8"></a><span class="w">    </span>--env-file<span class="w"> </span>.env<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-21-9"><a href="#__codelineno-21-9" id="__codelineno-21-9" name="__codelineno-21-9"></a><span class="w">    </span>--name<span class="w"> </span>compute_worker<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-21-10"><a href="#__codelineno-21-10" id="__codelineno-21-10" name="__codelineno-21-10"></a><span class="w">    </span>--restart<span class="w"> </span>unless-stopped<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-21-11"><a href="#__codelineno-21-11" id="__codelineno-21-11" name="__codelineno-21-11"></a><span class="w">    </span>--log-opt<span class="w"> </span>max-size<span class="o">=</span>50m<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-21-12"><a href="#__codelineno-21-12" id="__codelineno-21-12" name="__codelineno-21-12"></a><span class="w">    </span>--log-opt<span class="w"> </span>max-file<span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-21-13"><a href="#__codelineno-21-13" id="__codelineno-21-13" name="__codelineno-21-13"></a><span class="w">    </span>codalab/competitions-v2-compute-worker:latest<span class="w">            </span><span class="c1"># or other relevant docker image</span>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-14-1"><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>down
+</span><span id="__span-14-2"><a href="#__codelineno-14-2" id="__codelineno-14-2" name="__codelineno-14-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>pull
+</span><span id="__span-14-3"><a href="#__codelineno-14-3" id="__codelineno-14-3" name="__codelineno-14-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
 </span></code></pre></div>
 </article>
 </div>
@@ -1353,11 +1653,11 @@ one with GPU style workers (<code>is_gpu</code> and the GPU <code>docker_image</
 <div class="md-copyright__highlight">
         Apache-2.0
         
-        :: <a href="https://github.com/codalab/codalab-competitions/wiki/Community-Governance" rel="noopener" target="_blank">Governance Document</a>
+        :: <a href="https://github.com/codalab/codabench/blob/master/documentation/GOVERNANCE.md" rel="noopener" target="_blank">Governance Document</a>
         
-        :: <a href="https://github.com/codalab/codalab-competitions/wiki/Privacy" rel="noopener" target="_blank">Privacy Policy</a>
+        :: <a href="https://github.com/codalab/codabench/blob/master/documentation/PRIVACY.md" rel="noopener" target="_blank">Privacy Policy</a>
         
-        :: <a href="https://github.com/codalab/codalab-competitions/wiki/Project_About_CodaLab" rel="noopener" target="_blank">About</a>
+        :: <a href="https://github.com/codalab/codabench/blob/master/documentation/ABOUT.md" rel="noopener" target="_blank">About</a>
 </div>
     
     
@@ -1373,8 +1673,8 @@ one with GPU style workers (<code>is_gpu</code> and the GPU <code>docker_image</
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "search.share", "navigation.footer", "navigation.top", "content.action.edit", "content.action.view", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "provider": "mike"}}</script>
-<script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+<script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "search.share", "navigation.footer", "navigation.top", "content.action.edit", "content.action.view", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "provider": "mike"}}</script>
+<script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="../../../js/open_in_new_tab.js"></script>
 <script src="../../../assets/external/unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
 
