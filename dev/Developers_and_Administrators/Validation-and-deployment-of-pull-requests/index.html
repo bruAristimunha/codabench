@@ -9,33 +9,33 @@
       
       
       
-        <link rel="prev" href="../Manual-validation/">
+        <link rel="prev" href="../Running-tests/">
       
       
-        <link rel="next" href="../Upgrading_Codabench/">
+        <link rel="next" href="../Manual-validation/">
       
       
         
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.40">
+      <meta name="generator" content="zensical-0.0.68">
     
     
       
-        <title>Validation and deployment of pull requests - Codabench Docs</title>
+        <title>Validation and deployement of pull requests - Codabench Docs</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.fba56155.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.595f2bf5.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.b27955a4.min.css">
       
       
 
@@ -69,14 +69,11 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#1-local-testing-and-validation-of-the-changes" class="md-skip">
-          Skip to content
-        </a>
-      
+      <a href="#__skip" class="md-skip">
+        Skip to content
+      </a>
     </div>
     <div data-md-component="announce">
       
@@ -96,7 +93,7 @@
     <a href="../.." title="Codabench Docs" class="md-header__button md-logo" aria-label="Codabench Docs" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
@@ -113,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Validation and deployment of pull requests
+              Validation and deployement of pull requests
             
           </span>
         </div>
@@ -179,7 +176,7 @@
         <a href="https://github.com/codalab/codabench" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -217,6 +214,15 @@
   
   
     
+      
+      
+        
+      
+        
+      
+    
+    
+    
     
       <li class="md-tabs__item">
         <a href="../../Participants/User_Participating-in-a-Competition/" class="md-tabs__link">
@@ -236,12 +242,56 @@
   
   
     
+      
+      
+        
+      
+        
+      
+    
+    
+    
     
       
   
   
   
   
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
     
     
       <li class="md-tabs__item">
@@ -267,12 +317,33 @@
   
   
     
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
     
       <li class="md-tabs__item md-tabs__item--active">
         <a href="../Codabench-Installation/" class="md-tabs__link">
           
   
-  Developers and Administrators
+  Developers
 
         </a>
       </li>
@@ -285,6 +356,49 @@
   
   
   
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../How-to-deploy-Codabench-on-your-server/" class="md-tabs__link">
+          
+  
+  Self-Hosters
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+      
+        
+      
+    
+    
     
     
       <li class="md-tabs__item">
@@ -362,7 +476,7 @@
     <a href="../.." title="Codabench Docs" class="md-nav__button md-logo" aria-label="Codabench Docs" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
 
     </a>
     Codabench Docs
@@ -372,7 +486,7 @@
       <a href="https://github.com/codalab/codabench" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -416,6 +530,12 @@
   
     
     
+      
+        
+      
+        
+      
+    
     
     
       
@@ -448,18 +568,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Participants
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -483,10 +604,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -510,10 +631,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -526,6 +648,12 @@
   
   
     
+    
+      
+        
+      
+        
+      
     
     
     
@@ -559,23 +687,56 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Organizers
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -609,18 +770,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3_1">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Benchmark Creation
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -644,10 +806,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -671,10 +833,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -698,10 +860,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -725,10 +887,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -752,10 +914,37 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Organizers/Benchmark_Creation/Participant-Routing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Participant Routing
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
   
   
   
@@ -779,10 +968,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -806,10 +995,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -833,10 +1022,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -860,10 +1049,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -887,10 +1076,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -914,10 +1103,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -941,10 +1130,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -968,10 +1157,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -995,23 +1184,44 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1045,24 +1255,25 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3_2">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Running a Benchmarks
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../Organizers/Running_a_benchmark/Competition-Management-&-List/" class="md-nav__link">
+      <a href="../../Organizers/Running_a_benchmark/Competition-Management-%26-List/" class="md-nav__link">
         
   
   
@@ -1080,10 +1291,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1107,10 +1318,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1134,10 +1345,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1161,10 +1372,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1188,10 +1399,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1215,10 +1426,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1242,10 +1453,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1269,18 +1480,47 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Organizers/Running_a_benchmark/Competition-HITL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Human in the loop
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1295,6 +1535,24 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1319,7 +1577,7 @@
   <span class="md-ellipsis">
     
   
-  Developers and Administrators
+  Developers
 
     
   </span>
@@ -1329,18 +1587,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-  Developers and Administrators
+  Developers
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1364,64 +1623,10 @@
     </li>
   
 
-              
-            
+                
               
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../How-to-deploy-Codabench-on-your-server/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  How to Deploy a Server
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Administrator-procedures/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Administrative Procedures
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
+                  
   
   
   
@@ -1445,10 +1650,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1472,37 +1677,10 @@
     </li>
   
 
-              
-            
+                
               
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Creating-and-Restoring-from-Backup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Backups - Automating Creation and Restoring
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
+                  
   
   
   
@@ -1526,37 +1704,10 @@
     </li>
   
 
-              
-            
+                
               
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Robot-submissions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Robot Submissions
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
+                  
   
   
   
@@ -1580,10 +1731,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1607,64 +1758,10 @@
     </li>
   
 
-              
-            
+                
               
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Automating-with-Selenium/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Automation
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Manual-validation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Manual Validation
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
+                  
   
   
     
@@ -1908,73 +2005,23 @@
     </li>
   
 
-              
-            
+                
               
                 
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_14" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_14" id="__nav_4_14_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-   Upgrading Codabench
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_14">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-   Upgrading Codabench
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/" class="md-nav__link">
+      <a href="../Manual-validation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Index
+  Manual Validation
 
     
   </span>
@@ -1985,477 +2032,11 @@
     </li>
   
 
-              
-            
-              
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Upgrade-RabbitMQ/" class="md-nav__link">
+              
+            </ul>
+          </nav>
         
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Upgrade RabbitMQ (version < 1.0.0)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Create-new-logos-for-each-competition/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Create new logos for each competitions (version < 1.4.1)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Worker-Docker-Image-manual-update/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Worker docker image manual update (version < 1.3.1)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Add-line-into-.env-for-default-queue-worker-duration/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Add line in .env file for default worker queue duration (version < 1.7.0)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Uncomment-a-line-in-your-.env-file/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Uncomment a line in your .env file (version < 1.8.0)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Rebuilding-all-docker-images/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Rebuilding all docker images (version < 1.9.2)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Move-the-last-storage_inconsistency-files-from--logs-folder-to--var-logs--folder/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Move the latest storage_inconsistency files from the logs folder to var/logs (version < 1.12.0)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Submissions-and-Participants-Counts/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Submissions and Participants count (version < 1.14.0)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Homepage-counters/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Homepage Counters (version < 1.15.0)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/User-removal/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  User Removal (version < 1.17.0)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Database-size-fixes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Database size fix (version < 1.18.0)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Hide-output/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Hide Output update (version < 1.19.0)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Django-3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Django 3 Upgrades (version < 1.20.0)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Minio-image/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Minio Image Upgrade (version < 1.21.0)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Docker-py/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Docker-Py (version < 1.22.0)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Django-4/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Django 4 Upgrades (version < 1.23.0)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Upgrading_Codabench/Postgres-18/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Postgres 18 upgrade (version < 1.24.0)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -2468,6 +2049,18 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -2491,6 +2084,747 @@
   <span class="md-ellipsis">
     
   
+  Self-Hosters
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Self-Hosters
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-deploy-Codabench-on-your-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  How to Deploy a Server
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Administrator-procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Administrative Procedures
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../External-Competitions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  External Competitions
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Creating-and-Restoring-from-Backup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Backups - Automating Creation and Restoring
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Upgrading_Codabench/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+   Upgrading Codabench
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5_5">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+   Upgrading Codabench
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Upgrade-RabbitMQ/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Upgrade RabbitMQ (version < 1.0.0)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Create-new-logos-for-each-competition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Create new logos for each competitions (version < 1.4.1)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Worker-Docker-Image-manual-update/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Worker docker image manual update (version < 1.3.1)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Add-line-into-.env-for-default-queue-worker-duration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Add line in .env file for default worker queue duration (version < 1.7.0)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Uncomment-a-line-in-your-.env-file/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Uncomment a line in your .env file (version < 1.8.0)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Rebuilding-all-docker-images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Rebuilding all docker images (version < 1.9.2)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Move-the-last-storage_inconsistency-files-from--logs-folder-to--var-logs--folder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Move the latest storage_inconsistency files from the logs folder to var/logs (version < 1.12.0)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Submissions-and-Participants-Counts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Submissions and Participants count (version < 1.14.0)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Homepage-counters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Homepage Counters (version < 1.15.0)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/User-removal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  User Removal (version < 1.17.0)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Database-size-fixes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Database size fix (version < 1.18.0)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Hide-output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Hide Output update (version < 1.19.0)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Django-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Django 3 Upgrades (version < 1.20.0)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Minio-image/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Minio Image Upgrade (version < 1.21.0)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Docker-py/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Docker-Py (version < 1.22.0)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Django-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Django 4 Upgrades (version < 1.23.0)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upgrading_Codabench/Postgres-18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Postgres 18 upgrade (version < 1.24.0)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
   Newsletters Archive
 
     
@@ -2501,18 +2835,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Newsletters Archive
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2536,10 +2871,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2563,10 +2898,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2849,8 +3185,10 @@
             <div class="md-content" data-md-component="content">
               
               <article class="md-content__inner md-typeset">
+                <a id="__skip" tabindex="-1"></a>
                 
                   
+
   
     <a href="https://github.com/codalab/codabench/edit/develop/documentation/docs/Developers_and_Administrators/Validation-and-deployment-of-pull-requests.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
@@ -2868,7 +3206,7 @@
   
 
 
-  <h1 id="__skip">Validation and deployment of pull requests</h1>
+  <h1>Validation and deployement of pull requests</h1>
 
 <h2 id="1-local-testing-and-validation-of-the-changes">1. Local testing and validation of the changes</h2>
 <h3 id="setup">Setup</h3>
@@ -2891,7 +3229,7 @@
 </div>
 <h3 id="testing">Testing</h3>
 <p>Here is the usual checklist in order to validate the pull request:</p>
-<p><img alt="" src="../_attachments/3b003311-df9b-42bb-9c20-0d3231db328a_17534366441039398.jpg" /></p>
+<p><a class="glightbox" data-type="image" href="../_attachments/3b003311-df9b-42bb-9c20-0d3231db328a_17534366441039398.jpg"><img alt="" src="../_attachments/3b003311-df9b-42bb-9c20-0d3231db328a_17534366441039398.jpg" /></a></p>
 <p>The contributor may have provided guidelines for testing that you should follow.
 In addition to this:</p>
 <ul>
@@ -2901,7 +3239,7 @@ In addition to this:</p>
 <h3 id="merging">Merging</h3>
 <p>Once everything is validated, merge the pull request.
 If there are many minor commits, use "squash and merge" to merge them into one.</p>
-<p><img alt="" src="../_attachments/eaedaeae-1690-473b-8934-dc92271917c1_1753436644337235.jpg" /></p>
+<p><a class="glightbox" data-type="image" href="../_attachments/eaedaeae-1690-473b-8934-dc92271917c1_1753436644337235.jpg"><img alt="" src="../_attachments/eaedaeae-1690-473b-8934-dc92271917c1_1753436644337235.jpg" /></a></p>
 <p>You can then safely click on <code>Delete branch</code>. It is a good practice to keep the project clean.</p>
 <h2 id="update-the-test-server">Update the test server</h2>
 <p>Here are the necessary steps to update the Codabench server to reflect the last changes. We prodive here general guidelines that work for both the test server and the production server.</p>
@@ -2955,7 +3293,7 @@ If there are many minor commits, use "squash and merge" to merge them into one.<
 <h2 id="merge-develop-into-master">Merge develop into master</h2>
 <p>Once some pull requests (~3 - 10) were merged into <code>develop</code>, we can prepare a merge into <code>master</code>.
 Simply create a new pull request from Github interface, selecting <code>master</code> as the base branch:</p>
-<p><img alt="" src="../_attachments/c1fd3ba3-f3a8-457b-a0fd-c664ae7e361d_17534366440875823.jpg" /></p>
+<p><a class="glightbox" data-type="image" href="../_attachments/c1fd3ba3-f3a8-457b-a0fd-c664ae7e361d_17534366440875823.jpg"><img alt="" src="../_attachments/c1fd3ba3-f3a8-457b-a0fd-c664ae7e361d_17534366440875823.jpg" /></a></p>
 <p>In the text of the PR, link all relevant PR made to develop, and indicate the URL of the test server. 
 Example: <a href="https://github.com/codalab/codabench/pull/1166">https://github.com/codalab/codabench/pull/1166</a></p>
 <h2 id="update-the-production-server">Update the production server</h2>
@@ -2967,15 +3305,15 @@ Example: <a href="https://github.com/codalab/codabench/pull/1166">https://github
 <h2 id="creating-a-release">Creating a Release</h2>
 <p>Once the develop branch has been merged into master, it is possible to use the Github interface to tag the commit of the merge and create a release containing all the changes as well as manual interventions if needed.</p>
 <p>For this, you will need to go to the <a href="https://github.com/codalab/codabench/releases">release page</a> and click on <code>Draft a new release</code></p>
-<p><img alt="image" src="../../_attachments/88c04254-7333-4aea-8351-95ab83e02eaa_1752851311028784.jpg" /></p>
+<p><a class="glightbox" data-type="image" href="../../_attachments/88c04254-7333-4aea-8351-95ab83e02eaa_1752851311028784.jpg"><img alt="image" src="../../_attachments/88c04254-7333-4aea-8351-95ab83e02eaa_1752851311028784.jpg" /></a></p>
 <p>Afterwards, you click on <code>Choose a tag</code> and enter the tag you want to create (in this exemple, 1.17.0 which doesn't exist yet)</p>
-<p><img alt="image" src="../../_attachments/bfeb57be-c926-4da2-bb0e-7ff00193872f_17528513112279325.jpg" /></p>
+<p><a class="glightbox" data-type="image" href="../../_attachments/bfeb57be-c926-4da2-bb0e-7ff00193872f_17528513112279325.jpg"><img alt="image" src="../../_attachments/bfeb57be-c926-4da2-bb0e-7ff00193872f_17528513112279325.jpg" /></a></p>
 <p>You can then choose the targeted branch to create the tag on (<code>master</code> in our case) and then click on <code>Generate release notes</code>
 Github will automatically generate releases based on the new commits compared to the last tag.</p>
-<p><img alt="image" src="../../_attachments/29e74b35-7e47-4a6a-b85c-341f4bf9fa96_17528513113086753.jpg" /></p>
+<p><a class="glightbox" data-type="image" href="../../_attachments/29e74b35-7e47-4a6a-b85c-341f4bf9fa96_17528513113086753.jpg"><img alt="image" src="../../_attachments/29e74b35-7e47-4a6a-b85c-341f4bf9fa96_17528513113086753.jpg" /></a></p>
 <p>You can then change the text format however you like, as well as add things like Manual Intervention if there are any.</p>
 <p>When you are done, you publish the release.</p>
-<p><img alt="image" src="../../_attachments/000c3096-13b4-4d25-a8e1-efcba0fb75fd_17528513114340215.jpg" /></p>
+<p><a class="glightbox" data-type="image" href="../../_attachments/000c3096-13b4-4d25-a8e1-efcba0fb75fd_17528513114340215.jpg"><img alt="image" src="../../_attachments/000c3096-13b4-4d25-a8e1-efcba0fb75fd_17528513114340215.jpg" /></a></p>
 <h2 id="dockerhub-cleanup">Dockerhub Cleanup</h2>
 <p>One of the workflows of this repository creates a docker image and uploads it automatically to Dockerhub with the tag of the branch that launched the workflow.</p>
 <div class="admonition note">
@@ -3030,7 +3368,7 @@ Github will automatically generate releases based on the new commits compared to
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Manual-validation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Manual Validation">
+          <a href="../Running-tests/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Running Tests">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -3040,20 +3378,20 @@ Github will automatically generate releases based on the new commits compared to
                 Previous
               </span>
               <div class="md-ellipsis">
-                Manual Validation
+                Running Tests
               </div>
             </div>
           </a>
         
         
           
-          <a href="../Upgrading_Codabench/" class="md-footer__link md-footer__link--next" aria-label="Next: Index">
+          <a href="../Manual-validation/" class="md-footer__link md-footer__link--next" aria-label="Next: Manual Validation">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Index
+                Manual Validation
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -3100,20 +3438,25 @@ Github will automatically generate releases based on the new commits compared to
 </footer>
       
     </div>
-    <div class="md-dialog" data-md-component="dialog">
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+      
+<div class="md-progress" data-md-component="progress" role="progressbar" aria-label="Loading"></div>
     
     
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.code.copy","navigation.tabs","navigation.tabs.sticky","search.share","navigation.footer","navigation.top","content.action.edit","content.action.view","navigation.expand","navigation.instant","navigation.instant.progress"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.code.copy","navigation.tabs","navigation.tabs.sticky","search.share","navigation.footer","navigation.top","content.action.edit","content.action.view","navigation.expand","navigation.instant","navigation.instant.progress","navigation.indexes"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.dbc0afdc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.3c842f4c.min.js"></script>
       
     
   </body>
